@@ -1,5 +1,5 @@
 def call() {
-    withSonarQubeEnv('sonar-server') {
-        sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=Youtube -Dsonar.projectKey=Youtube '''
+    withSonarQubeEnv('sonar-token') {
+        sh ''' $SCANNER_HOME/bin/sonar-token-Dsonar.projectName=Youtube -Dsonar.projectKey=Youtube '''
     }
 }
